@@ -8,32 +8,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  
   <link href="styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="img/Landing.jpg">
+
 </head>
 <body>
 
-  <!-- ==================== NAVBAR ==================== -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#lan">Killer's Crosshair</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon bg-light"></span>
-        </button>
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#lan">Killer's Crosshair</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#historia">HISTORIA</a></li>
-          <li class="nav-item"><a class="nav-link" href="#espacio">ESPACIO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mecanicas">MECÁNICAS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#powerups">POWER-UPS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#controles">CONTROLES</a></li>
-          <li class="nav-item"><a class="nav-link" href="#modelos">ELENCO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#equipo">EQUIPO</a></li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#historia">ACERCA DE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#espacio">ESPACIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mecanicas">MECÁNICAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#powerups">POWER-UPS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#controles">CONTROLES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modelos">ELENCO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipo">EQUIPO</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- ==================== LANDING ==================== -->
+<!-- ==================== LANDING ==================== -->
 <header id="lan" class="lan d-flex align-items-center">
   <div class="container">
     <div class="row align-items-center">
@@ -41,14 +43,16 @@
       <div class="col-lg-6 text-center text-lg-start text-white">
         <h1 class="display-3 fw-bold" style="color: #f33;">Killer's Crosshair</h1>
         <p class="lead">IS HUNT OR BE HUNTED...</p>
-        <a href="#historia" class="btn btn-lg mt-3" style="color: white; background-color: #f33;">
+        <button class="btn-conoce">
+          <a href="#historia">
           Conoce más del juego
-        </a>
+          </a>
+        </button>
       </div>
 
       <div class="col-lg-6 text-center">
         <video autoplay muted loop playsinline class="landing-video rounded shadow">
-          <source src="img/video.mp4" type="video/mp4"> 
+          <source src="img/EjemploVideo.mp4" type="video/mp4"> 
         </video>
       </div>
     </div>
@@ -56,10 +60,10 @@
 </header>
 
 
-  <!-- ==================== HISTORIA ==================== -->
+<!-- ==================== ACERCA DE ==================== -->
  <section id="historia">
     <div class="container">
-      <h2 class="text-center text-uppercase mb-5">Historia</h2>
+      <h2 class="text-center text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Acerca de</h2>
       <div class="row g-4 align-items-center">
         <div class="col-md-6">
           <img src="img/escenario.png" alt="Escenario del juego" class="img-fluid rounded shadow">
@@ -67,8 +71,8 @@
         <div class="col-md-6">
           <h3>En una isla abandonada...</h3>
           <p>
-            Dos jugadores se enfrentan, uno en el rol de policía y otro como <span style="color: #f33;">asesino</span>.
-            El <i>objetivo</i> es: <i>el primero en conseguir 5 eliminaciones gana</i>.
+            Dos jugadores se enfrentan, uno en el rol de policía y otro como un <span style="color: #f33;">asesino</span>.
+            El primero en conseguir 5 eliminaciones gana</i>.
           </p>
           <p>
             Explora el pueblo de la isla lleno de armas y power-ups, usa la estrategia y el entorno a tu favor.
@@ -80,15 +84,14 @@
     </div>
   </section>
 
-  <!-- ==================== ESPACIO ==================== -->
+<!-- ==================== ESPACIO ==================== -->
   <section id="espacio" class="bg-dark">
     <div class="container text-center">
-      <h2 class="text-center text-uppercase mb-5">Espacio</h2>
-        <p class="text-center lead mb-4">
-          El juego se desarrolla en un pequeño pueblo en una isla que se convertirá en tu campo de batalla
+      <h2 class="text-center text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Espacio</h2>
+        <p class="text-center lead mb-4" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">
+          El juego se desarrolla en un pequeño pueblo en una isla abandonada el cual se convertirá en tu campo de batalla
         </p>  
-     
-      <!-- Carrusel del espacio -->
+
       <div id="carouselEspacio" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
@@ -123,25 +126,25 @@
     </div>
   </section>
 
-  <!-- ==================== MECÁNICAS ==================== -->
+<!-- ==================== MECÁNICAS ==================== -->
 <section id="mecanicas" class="py-5">
   <div class="container text-center">
-    <h2 class="text-uppercase mb-5">Mecánicas</h2>
+    <h2 class="text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Mecánicas</h2>
     <div class="row g-4">
 
       <div class="col-md-4">
         <div class="card p-4 h-100 shadow">
           <img src="img/movimiento.png" alt="Movimiento" class="mb-3" width="60">
           <h5>Movimiento</h5>
-          <p>Usa <span style="text-decoration: underline;">WASD</span> para desplazarte y usar el entorno a tu favor</p>
-        </div>
+          <p>Usa WASD para desplazarte en el entorno</p>
+        </div> 
       </div>
 
       <div class="col-md-4">
         <div class="card p-4 h-100 shadow">
           <img src="img/arma.png" alt="Armas" class="mb-3" width="60">
           <h5>Armas</h5>
-          <p>Encuentra <span style="text-decoration: underline;">armas</span> repartidas en el mapa: pistola, rifle y un arma especial única</p>
+          <p>Encuentra armas repartidas en el mapa para usarlas a tu favor</p>
         </div>
       </div>
 
@@ -149,7 +152,7 @@
         <div class="card p-4 h-100 shadow">
           <img src="img/respawn.png" alt="Respawn" class="mb-3" width="60">
           <h5>Respawn</h5>
-          <p>Tras cada muerte <span style="text-decoration: underline;">reaparecerás</span> hasta que uno de los jugadores llegue a la meta</p>
+          <p>Tras cada muerte reaparecerás hasta que uno de los jugadores llegue a la meta</p>
         </div>
       </div>
 
@@ -157,7 +160,7 @@
       <div class="card p-4 h-100 shadow">
           <img src="img/victoria.png" alt="Victoria" class="mb-3" width="60">
           <h5>Victoria</h5>
-          <p>El primero en lograr <span style="color:#f33;">5 eliminaciones</span> será el  <span style="text-decoration: underline;">ganador</span> de la partida</p>
+          <p>El primero en lograr <span style="color:#f33;">5 eliminaciones</span> será el ganador de la partida</p>
         </div>
       </div>
 
@@ -165,91 +168,87 @@
   </div>
 </section>
 
-  <!-- ==================== POWER-UPS ==================== -->
-  <section id="powerups" class="bg-dark">
-    <div class="container text-center">
-       <h2 class="text-uppercase mb-5">Power-ups</h2>
-      <div class="row g-4">
+<!-- ==================== POWER-UPS ==================== -->
+<section id="powerups" class="bg-dark"> 
+  <div class="container text-center"> 
+    <h2 class="text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Power-ups</h2> 
+    <div class="row g-4"> 
+      <div class="col-md-4"> 
+        <div class="card p-4 h-100 shadow"> 
+          <img src="img/botiquin.png" alt="Botiquín" width="70" class="mb-3" id="img-powerup"> 
+          
+          <h5>Botiquín</h5> <p>Permite que recuperes tu vida para que vuelvas al combate</p> 
+        </div> 
+      </div> 
+      <div class="col-md-4"> 
+        <div class="card p-4 h-100 shadow"> 
+          <img src="img/bebida.png" alt="Bebida" width="70" class="mb-3" id="img-powerup"> 
+          <h5>Bebida energizante</h5> <p>Aumenta tu velocidad de movimiento</span></p> 
+        </div> 
+      </div> 
+      <div class="col-md-4"> 
+        <div class="card p-4 h-100 shadow"> 
+          <img src="img/municion.png" alt="Munición" width="70" class="mb-3" id="img-powerup"> 
+          <h5>Munición</h5> 
+          <p>Recupera balas para continuar en el juego</p> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</section> 
 
-        <div class="col-md-4">
-          <div class="card p-4 h-100 shadow">
-            <img src="img/botiquin.png" alt="Botiquín" width="70" class="mb-3">
-            <h5>Botiquín</h5>
-            <p>Recupera tu <span style="text-decoration: underline;">vida perdida</span> para que vuelvas al combate</p>
-          </div>
-        </div>
+<!-- ==================== CONTROLES ==================== -->
+<section id="controles">
+  <div class="container text-center">
+    <h2 class="text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Controles</h2>
 
-        <div class="col-md-4">
-          <div class="card p-4 h-100 shadow">
-            <img src="img/bebida.png" alt="Bebida" width="70" class="mb-3">
-            <h5>Bebida energizante</h5>
-            <p>Aumenta tu <span style="text-decoration: underline;">velocidad de movimiento</span></p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card p-4 h-100 shadow">
-            <img src="img/municion.png" alt="Munición" width="70" class="mb-3">
-            <h5>Munición</h5>
-            <p>Recupera <span style="text-decoration: underline;">balas</span> para continuar en el juego</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-</section>
-
-  <!-- ==================== CONTROLES ==================== -->
-  <section id="controles">
-    <div class="container text-center">
-      <h2 class="text-uppercase mb-5">Controles</h2>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <table class="table table-dark table-striped text-center align-middle">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="controls-table-wrapper">
+          <table class="table table-dark text-center align-middle table-bordered table-custom">
             <thead>
               <tr>
                 <th>TECLA</th>
                 <th>ACCIÓN</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
-                <td><strong>WASD</strong></td>
+                <td><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span></td>
                 <td>Movimiento</td>
               </tr>
-
               <tr>
-                <td><strong>Click izquierdo</strong></td>
+                <td><span class="key">Click izquierdo</span></td>
                 <td>Disparar</td>
               </tr>
-              
               <tr>
-                <td><strong>E</strong></td>
+                <td><span class="key">E</span></td>
                 <td>Recoger objetos</td>
               </tr>
-
               <tr>
-                <td><strong>Ctrl</strong></td>
+                <td><span class="key">Ctrl</span></td>
                 <td>Agacharse</td>
               </tr>
-              
               <tr>
-                <td><strong>Esc</strong></td>
+                <td><span class="key">Esc</span></td>
                 <td>Pausar</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
     </div>
   </div>
 </section>
 
+
 <!-- ==================== MODELOS DE PERSONAJES ==================== -->
 <section id="modelos" class="bg-dark">
   <div class="container text-center">
-    <h2 class="text-uppercase mb-5">Elenco</h2>
+    <h2 class="text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Elenco</h2>
+    <p class="text-center lead" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">
+      Conoce a los personajes del juego
+    </p> 
 
     <div class="row g-4">
       <div class="col-md-4">
@@ -282,44 +281,53 @@
   </div>
 </section>
 
+<!-- ==================== EQUIPO ==================== -->
+<section id="equipo">
+  <div class="container text-center">
+    <h2 class="text-uppercase mb-5" style="text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);">Nuestro Equipo</h2>
+    <div class="row g-4 justify-content-center">
 
-  <!-- ==================== EQUIPO ==================== -->
-  <section id="equipo">
-    <div class="container text-center">
-      <h2 class="text-center text-uppercase mb-5">Nuestro Equipo</h2>
-        <div class="row g-4 text-center">
-
-          <div class="col-md-4">
-          <div class="team-card p-4 rounded shadow">
-            <img src="img/emoji5.png" class="team-img mb-3">
-            <h5>Miguel Moreno</h5>
+      <div class="col-md-4 col-sm-6">
+        <div class="team-card p-4 rounded shadow-lg">
+          <div class="team-img-wrapper">
+            <img src="img/emoji5.png" class="team-img mb-3" alt="Miguel Moreno">
           </div>
+          <h5>Miguel Moreno</h5>
         </div>
+      </div>
 
-         <div class="col-md-4">
-        <div class="team-card p-4 rounded shadow">
-          <img src="img/emoji4.png" class="team-img mb-3">
+      <div class="col-md-4 col-sm-6">
+        <div class="team-card p-4 rounded shadow-lg">
+          <div class="team-img-wrapper">
+            <img src="img/emoji4.png" class="team-img mb-3" alt="Franco Méndez">
+          </div>
           <h5>Franco Méndez</h5>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="team-card p-4 rounded shadow">
-          <img src="img/emoji1.png" class="team-img mb-3">
-          <h5>Tiffany Vivas</h5>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="team-card p-4 rounded shadow">
-          <img src="img/emoji2.png" class="team-img mb-3">
+      <div class="col-md-4 col-sm-6">
+        <div class="team-card p-4 rounded shadow-lg">
+          <div class="team-img-wrapper">
+            <img src="img/emoji2.png" class="team-img mb-3" alt="Vivas">
+          </div>
           <h5>Constanza Montiel</h5>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="team-card p-4 rounded shadow">
-          <img src="img/emoji3.png" class="team-img mb-3">
+      <div class="col-md-4 col-sm-6">
+        <div class="team-card p-4 rounded shadow-lg">
+          <div class="team-img-wrapper">
+            <img src="img/emoji1.png" class="team-img mb-3" alt="Constanza Montiel">
+          </div>
+          <h5>Tiffany Vivas</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="team-card p-4 rounded shadow-lg">
+          <div class="team-img-wrapper">
+            <img src="img/emoji3.png" class="team-img mb-3" alt="Sared Vera">
+          </div>
           <h5>Sared Vera</h5>
         </div>
       </div>
@@ -327,6 +335,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ==================== CONTACTO / FOOTER ==================== -->
 <footer class="footer bg-dark text-white py-5">

@@ -14,20 +14,48 @@ h2 {
 }
 
 /* ==================== NAVBAR ==================== */
-.navbar {
-  background-color: #111;
+.custom-navbar {
+  background-color: rgba(10, 10, 10);
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
+  z-index: 999;
 }
+
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 900;
   color: #f33 !important;
+  letter-spacing: 1px;
 }
-.nav-link {
+
+.navbar-nav .nav-link {
   color: #fff !important;
+  position: relative;
+  font-weight: 500;
   margin: 0 10px;
+  transition: color 0.3s ease;
 }
-.nav-link:hover {
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin: auto;
+  background: #f33;
+  transition: width 0.3s ease;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-nav .nav-link:hover {
   color: #f33 !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
 }
 
 /* ==================== LANDING ==================== */
@@ -59,8 +87,38 @@ h2 {
 .lan h1 {
   text-shadow: 2px 2px 12px #000;
 }
+
 .lan p {
   font-size: 1.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-conoce {
+  color: white; 
+  background-color: #f33;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn-conoce:hover {
+ background-color:rgb(230, 43, 43);
+ text-decoration: none;
+ text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+} 
+
+.lead {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
 /* ==================== MECÁNICAS ==================== */
@@ -78,27 +136,72 @@ h2 {
 }
 
 /* ==================== POWER UPS ==================== */
-#powerups .card {
-  background-color: #1a1a1a;
-  border: none;
-  color: #fff;
-  transition: transform 0.3s;
+#powerups .card { 
+  background-color: #1a1a1a; 
+  border: none; 
+  color: #fff; 
+  transition: transform 0.3s; 
+} 
+
+#powerups .card:hover { 
+  transform: translateY(-10px); 
+} 
+
+#powerups h5 { 
+  color: #f33; 
 }
-#powerups .card:hover {
-  transform: translateY(-10px);
-}
-#powerups h5 {
-  color: #f33;
+
+#img-powerup:hover {
+  transform: rotate(15deg);
 }
 
 /* ==================== CONTROLES ==================== */
-#controles table {
+#controles {
+  padding: 60px 0;
+  background-color: #111;
+  color: #fff;
+}
+
+#controles h2 {
+  color: #f33;
+}
+
+.table-custom {
+  background-color: #1a1a1a; 
+  border-spacing: 0;
   border-radius: 12px;
   overflow: hidden;
 }
-#controles th {
+
+.table-custom thead th {
+  background-color: #1a1a1a; ;
   color: #f33;
-  font-weight: bold;
+  border: none;
+}
+
+.table-custom td {
+  vertical-align: middle;
+  border: none;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.key {
+  display: inline-block;
+  background: #222;
+  border: 1px solid #f33;
+  color: #f33;
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  transition: transform 0.2s;
+}
+
+.key:hover {
+  transform: scale(1.1);
+  background: #1d1d1d;
 }
 
 /* ==================== SECCIONES ==================== */
@@ -135,16 +238,15 @@ section {
 .footer p {
   color: #aaa;
 }
+
 /* ==================== CARRUSELES ==================== */
 .carousel-item img {
-  height: 600px;       /* tamaño fijo, ajusta a tu gusto */
-  object-fit: cover;   /* recorta sin deformar */
+  height: 500px;      
+  object-fit: cover; 
   object-position: center;
 }
 
-
 /* ==================== ELENCO ==================== */
-/* ==== Elenco ==== */
 .character-card {
   overflow: hidden;
   border-radius: 12px;
@@ -171,6 +273,7 @@ section {
   transition: opacity 0.4s ease;
   font-size: 1.5rem;
   font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
 .character-card:hover .overlay-character {
@@ -179,19 +282,64 @@ section {
 
 /* ==================== EQUIPO ==================== */
 .team-card {
-  background-color: #1a1a1a;
-  color: #fff;
-  transition: transform 0.3s, background-color 0.3s;
-  border: 3px solid #f33;
-}
-.team-card:hover {
-  transform: translateY(-10px);
   background-color: #222;
+  color: #fff;
+  border: 2px solid #f33;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
 }
-.team-img {
+
+.team-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
+
+.team-card h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-img-wrapper {
   width: 120px;
   height: 120px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #f33;
+  transition: transform 0.3s ease;
+}
+
+.team-img-wrapper:hover .team-img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .team-card {
+    text-align: center;
+  }
+
+  .team-img-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .team-card h5 {
+    font-size: 1rem;
+  }
 }
