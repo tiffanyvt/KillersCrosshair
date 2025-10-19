@@ -360,5 +360,34 @@
     </p>
   </div>
 </footer>
+
+<!-- ==================== CURSOR PERSONALIZADO ==================== -->
+<div id="custom-cursor"></div>
+
+<script>
+// JavaScript para controlar el cursor personalizado
+document.addEventListener('DOMContentLoaded', function() {
+  const cursor = document.getElementById('custom-cursor');
+  
+  // Mostrar el cursor personalizado
+  cursor.style.display = 'block';
+  
+  // Actualizar posición del cursor
+  document.addEventListener('mousemove', function(e) {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+  
+  // Efecto al hacer clic
+  document.addEventListener('mousedown', function() {
+    cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+  });
+  
+  document.addEventListener('mouseup', function() {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+});
+</script>
+
 </body>
 </html>

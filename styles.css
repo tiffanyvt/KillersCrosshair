@@ -3,6 +3,7 @@ body {
   background-color: #111;
   color: #fff;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 h2 {
@@ -324,4 +325,25 @@ section {
   width: 150px;
   height: 150px;
   margin-top:0%;
+}
+
+/* ==================== CURSOR PERSONALIZADO ==================== */
+#custom-cursor {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background: url('img/cursor_mira.png') center center no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  left: 0;
+  top: 0;
+}
+
+/* Ocultar el cursor estándar en toda la página */
+html, body, a, button, .btn-conoce, .carousel-control-prev, 
+.carousel-control-next, .navbar-toggler, .nav-link {
+  cursor: none !important;
 }
