@@ -1,4 +1,3 @@
-/* ==================== GENERAL ==================== */
 body {
   font-family: 'Arial Black', sans-serif;
   background-color: #111;
@@ -217,28 +216,6 @@ section {
   color: #f33;
 }
 
-/* ==================== FOOTER ==================== */
-.footer {
-  background: #111;
-}
-.btn-social {
-  display: inline-block;
-  margin: 0 15px;
-  color: #fff;
-  transition: transform 0.3s, color 0.3s;
-}
-.btn-social:hover {
-  transform: scale(1.2);
-  color: #f33;
-}
-.footer h3 {
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.footer p {
-  color: #aaa;
-}
-
 /* ==================== CARRUSELES ==================== */
 .carousel-item img {
   height: 500px;      
@@ -325,4 +302,32 @@ section {
 
 .team-img-wrapper:hover .team-img {
   transform: scale(1.1);
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background: #111;
+}
+.btn-social {
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+.btn-social:hover {
+  transform: scale(1.2);
+  color: #f33;
+}
+.footer h3 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.footer p {
+  color: #aaa;
+  font-size: 10px;
+}
+#imgEmp {
+  width: 150px;
+  height: 150px;
+  margin-top:0%;
 }
