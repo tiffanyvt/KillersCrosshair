@@ -77,12 +77,6 @@ h2 {
   z-index: 1; 
 }
 
-.landing-video {
-  width: 100%;
-  max-width: 500px;
-  border: 3px solid #f33;
-}
-
 .lan h1 {
   text-shadow: 2px 2px 12px #000;
 }
