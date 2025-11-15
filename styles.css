@@ -123,7 +123,7 @@ a:hover {
   transition: transform 0.3s;
 }
 #mecanicas .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 #mecanicas h5 {
   color: #f33;
@@ -138,7 +138,7 @@ a:hover {
 } 
 
 #powerups .card:hover { 
-  transform: translateY(-10px); 
+  transform: translateY(-5px); 
 } 
 
 #powerups h5 { 
@@ -149,6 +149,10 @@ a:hover {
   transform: rotate(15deg);
 }
 
+#powerups img {
+  display: block;
+  margin: 0 auto;
+}
 /* ==================== CONTROLES ==================== */
 #controles {
   padding: 60px 0;
@@ -264,7 +268,7 @@ section {
 }
 
 .team-card:hover {
-  transform: translateY(-15px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   background-color: #333;
 }
@@ -327,7 +331,6 @@ section {
   margin-top:0%;
 }
 
-/* ==================== CURSOR PERSONALIZADO ==================== */
 #custom-cursor {
   position: fixed;
   width: 64px;
@@ -342,8 +345,82 @@ section {
   top: 0;
 }
 
-/* Ocultar el cursor estándar en toda la página */
 html, body, a, button, .btn-conoce, .carousel-control-prev, 
 .carousel-control-next, .navbar-toggler, .nav-link {
   cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .lan h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .lan p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .lan .btn-conoce {
+    display: block;
+    margin: 15px auto;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 220px !important;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-item img {
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .card {
+    padding: 20px !important;
+  }
+
+  #mecanicas img,
+  #powerups img {
+    width: 80px !important;
+  }
+
+  .character-card img.elenco-img {
+    height: 260px;
+  }
+
+  .team-card {
+    margin-bottom: 20px;
+  }
+
+  .team-img-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .table-custom td {
+    font-size: 0.85rem;
+  }
+
+  .key {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  #imgEmp {
+    width: 120px;
+    height: 120px;
+  }
 }
